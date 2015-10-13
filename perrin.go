@@ -1,6 +1,6 @@
 package goperrin
 
-func perrin() func() int {
+func Perrin() func() int {
 	a, b, c := 3, 0, 2
 
 	return func() int {
@@ -9,7 +9,7 @@ func perrin() func() int {
 	}
 }
 
-func perrin_max(max int) func() int {
+func PerrinMax(max int) func() int {
 	a, b, c := 3, 0, 2
 
 	return func() int {
@@ -22,7 +22,7 @@ func perrin_max(max int) func() int {
 	}
 }
 
-func perrin_reset(max int) func() int {
+func PerrinReset(max int) func() int {
 	a, b, c := 3, 0, 2
 
 	return func() int {
