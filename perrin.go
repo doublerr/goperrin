@@ -1,4 +1,4 @@
-package main
+package goperrin
 
 import "fmt"
 
@@ -34,16 +34,5 @@ func perrin_reset(max int) func() int {
 
 		a, b, c = b, c, a+b
 		return a
-	}
-}
-
-func main() {
-
-	p := perrin_max(100)
-	for i := 3; i < 10000; i = p() {
-		fmt.Println(i)
-		if i == 119 {
-			break
-		}
 	}
 }
