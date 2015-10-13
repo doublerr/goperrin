@@ -1,7 +1,5 @@
 package goperrin
 
-import "fmt"
-
 func perrin() func() int {
 	a, b, c := 3, 0, 2
 
