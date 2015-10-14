@@ -8,7 +8,8 @@ There are two possibly useful functions to reset and cap the sequence included. 
 
 In all the examples, I set the initial value of the for loop to `3`. I do this since the initial value of the sequence is `3` and I haven't figured out a better way to get the first return to be `3`. Let me know if you have one!
 
- 1. Continiously increment according to the perrin sequence (The for loop will stop once `i` has passed `10000`):
+#### Continiously increment 
+ * According to the perrin sequence (The for loop will stop once `i` has passed `10000`):
 
 ```go
 import "github.com/doublerr/goperrin"
@@ -34,7 +35,7 @@ func main {
 …
 ```
 
- 2. Cap the sequence at `max`:
+#### Cap the sequence at `max`:
 
 ```go
 import "github.com/doublerr/goperrin"
@@ -60,7 +61,7 @@ func main {
 …
 ```
 
- 3. Reset the sequence at `max`:
+#### Reset the sequence at `max`:
 
 ```go
 import "github.com/doublerr/goperrin"
