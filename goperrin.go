@@ -28,6 +28,7 @@ func PerrinReset(max int) func() int {
 	return func() int {
 		if a >= max {
 			a, b, c = 3, 0, 2
+			return a
 		}
 
 		a, b, c = b, c, a+b
