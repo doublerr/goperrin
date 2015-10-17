@@ -20,8 +20,11 @@ func Perrin() func() int {
 	a, b, c := 3, 0, 2
 
 	return func() int {
+		p := a
 		a, b, c = b, c, a+b
-		return a
+
+		return p
+
 	}
 }
 
@@ -43,11 +46,13 @@ func PerrinReset(max int) func() int {
 
 	return func() int {
 		if a >= max {
+			p := a
 			a, b, c = 3, 0, 2
-			return a
+			return p
 		}
 
+		p := a
 		a, b, c = b, c, a+b
-		return a
+		return p
 	}
 }

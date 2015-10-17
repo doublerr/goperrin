@@ -24,13 +24,8 @@ func TestPerrin(t *testing.T) {
 
 	p := Perrin()
 
-	index := 0
-	for i := 3; i < 4; i = p() {
-		if index == 4 {
-			break
-		}
-		perrinList[index] = i
-		index += 1
+	for i := 0; i < 4; i += 1 {
+		perrinList[i] = p()
 	}
 
 	if perrinList != masterList {
@@ -39,18 +34,13 @@ func TestPerrin(t *testing.T) {
 }
 
 func TestPerrinMax(t *testing.T) {
-	var perrinList [6]int
+	var perrinList [10]int
 	max := 5
 
 	p := PerrinMax(max)
 
-	index := 0
-	for i := 3; i < 6; i = p() {
-		if index == 6 {
-			break
-		}
-		perrinList[index] = i
-		index += 1
+	for i := 0; i < 10; i += 1 {
+		perrinList[i] = p()
 	}
 
 	if perrinList[len(perrinList)-1] != max {
@@ -64,13 +54,8 @@ func TestPerrinReset(t *testing.T) {
 
 	p := PerrinReset(5)
 
-	index := 0
-	for i := 3; i < 9; i = p() {
-		if index == 9 {
-			break
-		}
-		perrinList[index] = i
-		index += 1
+	for i := 0; i < 9; i += 1 {
+		perrinList[i] = p()
 	}
 
 	if perrinList != masterList {
