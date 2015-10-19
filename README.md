@@ -2,9 +2,12 @@
 
 [![Circle CI](https://circleci.com/gh/doublerr/goperrin.svg?style=svg)](https://circleci.com/gh/doublerr/goperrin)
 
-This is a simple golang implementation of the perrin sequence (http://mathworld.wolfram.com/PerrinSequence.html) which can be a good backoff sequence for polling remote APIs.
+This is a simple golang implementation of the perrin sequence, http://mathworld.wolfram.com/PerrinSequence.html, which can be a good backoff sequence for polling remote APIs.
 
 There are two possibly useful functions to reset and cap the sequence included.  See examples for more.
+
+##Documentation
+https://godoc.org/github.com/doublerr/goperrin
 
 ## Examples
 
