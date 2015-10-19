@@ -14,8 +14,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+//goperrin provides a few simple functions that implement the perrin sequence. The perrin grows slower than the fibonacci sequence is interesting as a backoff algorithm for polling.
 package goperrin
 
+//Returns the current item in the sequence.
 func Perrin() func() int {
 	a, b, c := 3, 0, 2
 
@@ -28,6 +30,7 @@ func Perrin() func() int {
 	}
 }
 
+//Returns the current item in the sequence but will cap at the provided max and return the max value thereafter.
 func PerrinMax(max int) func() int {
 	a, b, c := 3, 0, 2
 
@@ -41,6 +44,7 @@ func PerrinMax(max int) func() int {
 	}
 }
 
+//Returns the current item in the sequence but will reset once the provided value is reached.
 func PerrinReset(max int) func() int {
 	a, b, c := 3, 0, 2
 
